@@ -1,0 +1,4 @@
+condition,judge_vs_words,judge_vs_len_ratio,judge_distinct_values
+weak_bart,-0.0879,0.202,9
+zero_shot,0.1395,0.3024,8
+few_shot,0.0278,0.2934,9

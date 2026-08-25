@@ -1,0 +1,241 @@
+7.8s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.8s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.8s 3 0.00s - to python to disable frozen modules.
+7.8s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.4s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.4s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.4s 7 0.00s - to python to disable frozen modules.
+8.4s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.5s 9 /kaggle/input/notebooks/kaziushno/thesis-a-generation/truncation_report.csv
+9.5s 10 /kaggle/input/notebooks/kaziushno/thesis-a-generation/experiment_config.json
+9.5s 11 /kaggle/input/notebooks/kaziushno/thesis-a-generation/__results__.html
+9.5s 12 /kaggle/input/notebooks/kaziushno/thesis-a-generation/selected_cases.csv
+9.5s 13 /kaggle/input/notebooks/kaziushno/thesis-a-generation/generated_summaries.csv
+9.5s 14 /kaggle/input/notebooks/kaziushno/thesis-a-generation/__huggingface_repos__.json
+9.5s 15 /kaggle/input/notebooks/kaziushno/thesis-a-generation/__notebook__.ipynb
+9.5s 16 /kaggle/input/notebooks/kaziushno/thesis-a-generation/__output__.json
+9.5s 17 /kaggle/input/notebooks/kaziushno/thesis-a-generation/gen_checkpoint.jsonl
+9.5s 18 /kaggle/input/notebooks/kaziushno/thesis-a-generation/custom.css
+9.5s 19 /kaggle/input/datasets/aminexdr/bhc-mimic-iv-summary/BHC_MIMIC-IV.csv
+10.6s 20 bfc121155064afa2d81b5505682ffc0d96f4334c
+17.2s 21 imported 5 expected file(s) from /kaggle/input/notebooks/kaziushno/thesis-a-generation
+17.2s 22 ignored 2 unrecognised file(s): ['__huggingface_repos__.json', '__output__.json']
+17.2s 23 parser self-test: passed
+18.4s 24 statistics self-test: passed
+18.4s 25 
+18.4s 26 ==============================================================================
+18.4s 27 STAGE 2  automatic metrics
+18.4s 28 ==============================================================================
+21.3s 29 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 kB 3.8 MB/s eta 0:00:00
+21.3s 30 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.1/61.1 kB 4.1 MB/s eta 0:00:00
+21.5s 31 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 kB 3.8 MB/s eta 0:00:00
+21.5s 32 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.1/61.1 kB 4.1 MB/s eta 0:00:00
+42.1s 33 NOTE: no provenance.json from stage 1 (it predates this check).
+42.1s 34 Falling back to structural validation of the inputs.
+42.1s 35 scoring 900 summaries
+56.4s 36 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+56.4s 37 
+56.4s 38 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+56.4s 39 WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+56.4s 40 
+56.4s 41 WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+68.1s 42 RobertaModel LOAD REPORT from: roberta-large
+68.1s 43 Key                             | Status     |
+68.1s 44 --------------------------------+------------+-
+68.1s 45 roberta.embeddings.position_ids | UNEXPECTED |
+68.1s 46 lm_head.dense.weight            | UNEXPECTED |
+68.1s 47 lm_head.layer_norm.bias         | UNEXPECTED |
+68.1s 48 lm_head.bias                    | UNEXPECTED |
+68.1s 49 lm_head.layer_norm.weight       | UNEXPECTED |
+68.1s 50 lm_head.dense.bias              | UNEXPECTED |
+68.1s 51 pooler.dense.bias               | MISSING    |
+68.1s 52 pooler.dense.weight             | MISSING    |
+68.1s 53 
+68.1s 54 Notes:
+68.1s 55 - UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+68.1s 56 - MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+68.1s 57 
+68.1s 58 RobertaModel LOAD REPORT from: roberta-large
+68.1s 59 Key                             | Status     |
+68.1s 60 --------------------------------+------------+-
+68.1s 61 roberta.embeddings.position_ids | UNEXPECTED |
+68.1s 62 lm_head.dense.weight            | UNEXPECTED |
+68.1s 63 lm_head.layer_norm.bias         | UNEXPECTED |
+68.1s 64 lm_head.bias                    | UNEXPECTED |
+68.1s 65 lm_head.layer_norm.weight       | UNEXPECTED |
+68.1s 66 lm_head.dense.bias              | UNEXPECTED |
+68.1s 67 pooler.dense.bias               | MISSING    |
+68.1s 68 pooler.dense.weight             | MISSING    |
+68.1s 69 
+68.1s 70 Notes:
+68.1s 71 - UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+68.1s 72 - MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+68.5s 73 calculating scores...
+68.5s 74 computing bert embedding.
+120.2s 75 computing greedy matching.
+121.6s 76 done in 52.95 seconds, 17.00 sentences/sec
+123.2s 77 RobertaModel LOAD REPORT from: roberta-large
+123.2s 78 Key                             | Status     |
+123.2s 79 --------------------------------+------------+-
+123.2s 80 roberta.embeddings.position_ids | UNEXPECTED |
+123.2s 81 lm_head.dense.weight            | UNEXPECTED |
+123.2s 82 lm_head.layer_norm.bias         | UNEXPECTED |
+123.2s 83 lm_head.bias                    | UNEXPECTED |
+123.2s 84 lm_head.layer_norm.weight       | UNEXPECTED |
+123.2s 85 lm_head.dense.bias              | UNEXPECTED |
+123.2s 86 pooler.dense.bias               | MISSING    |
+123.2s 87 pooler.dense.weight             | MISSING    |
+123.2s 88 
+123.2s 89 Notes:
+123.2s 90 - UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+123.2s 91 - MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+123.2s 92 
+123.2s 93 RobertaModel LOAD REPORT from: roberta-large
+123.2s 94 Key                             | Status     |
+123.2s 95 --------------------------------+------------+-
+123.2s 96 roberta.embeddings.position_ids | UNEXPECTED |
+123.2s 97 lm_head.dense.weight            | UNEXPECTED |
+123.2s 98 lm_head.layer_norm.bias         | UNEXPECTED |
+123.2s 99 lm_head.bias                    | UNEXPECTED |
+123.2s 100 lm_head.layer_norm.weight       | UNEXPECTED |
+123.2s 101 lm_head.dense.bias              | UNEXPECTED |
+123.2s 102 pooler.dense.bias               | MISSING    |
+123.2s 103 pooler.dense.weight             | MISSING    |
+123.2s 104 
+123.2s 105 Notes:
+123.2s 106 - UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+123.2s 107 - MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+123.4s 108 calculating scores...
+123.4s 109 computing bert embedding.
+180.1s 110 computing greedy matching.
+181.3s 111 done in 57.72 seconds, 15.59 sentences/sec
+183.0s 112 recorded provenance for stage 2
+183.1s 113 
+183.1s 114 metric means by condition:
+183.1s 115 rouge1  rouge2  rougeL    bleu  bertscore_f1  bertscore_f1_raw
+183.1s 116 condition
+183.1s 117 weak_bart  0.1845  0.0569  0.1233  1.6682       -0.0341            0.8255
+183.1s 118 zero_shot  0.3199  0.0738  0.1610  3.2245       -0.0210            0.8277
+183.1s 119 few_shot   0.3314  0.0795  0.1681  3.5864       -0.0142            0.8288
+183.1s 120 
+183.1s 121 saved /kaggle/working/metrics_long.csv
+183.1s 122 
+183.1s 123 ==============================================================================
+183.1s 124 STAGE 3  judging the clinical summaries
+183.1s 125 ==============================================================================
+185.4s 126 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 92.1 MB/s eta 0:00:00
+185.5s 127 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 389.2/389.2 kB 25.8 MB/s eta 0:00:00
+185.6s 128 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 92.1 MB/s eta 0:00:00
+185.6s 129 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 389.2/389.2 kB 25.8 MB/s eta 0:00:00
+185.8s 130 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.9/40.9 MB 50.7 MB/s eta 0:00:00
+185.9s 131 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 516.0/516.0 kB 31.2 MB/s eta 0:00:00
+186.0s 132 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.9/40.9 MB 50.7 MB/s eta 0:00:00
+186.0s 133 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 516.0/516.0 kB 31.2 MB/s eta 0:00:00
+199.5s 134 NOTE: provenance.json exists but has no stage_1 entry.
+199.5s 135 Generation provenance is UNVERIFIED; using structural checks.
+199.5s 136 resuming with 0 judgement(s) already recorded
+199.5s 137 
+199.5s 138 loading judge14: Qwen/Qwen2.5-14B-Instruct  (900 to judge)
+199.7s 139 You are using a model of type qwen2 to instantiate a model of type . This is not supported for all configurations of models and can yield errors.
+199.7s 140 
+199.7s 141 You are using a model of type qwen2 to instantiate a model of type . This is not supported for all configurations of models and can yield errors.
+205.1s 142 Traceback (most recent call last):
+205.1s 143 File "<string>", line 1, in <module>
+205.1s 144 File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 131, in execute_notebook
+205.1s 145 raise_for_execution_errors(nb, output_path)
+205.1s 146 File "/usr/local/lib/python3.12/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+205.1s 147 raise error
+205.1s 148 papermill.exceptions.PapermillExecutionError:
+205.1s 149 ---------------------------------------------------------------------------
+205.1s 150 Exception encountered at "In [3]":
+205.1s 151 ---------------------------------------------------------------------------
+205.1s 152 StrictDataclassDefinitionError            Traceback (most recent call last)
+205.1s 153 /tmp/ipykernel_24/2969484788.py in <cell line: 0>()
+205.1s 154 942         print(f"\nloading {tag}: {model_id}  ({len(todo)} to judge)")
+205.1s 155 943         tok = AutoTokenizer.from_pretrained(model_id)
+205.1s 156 --> 944         model = AutoModelForCausalLM.from_pretrained(
+205.1s 157 945             model_id, quantization_config=bnb, device_map="auto")
+205.1s 158 946         model.eval()
+205.1s 159 
+205.1s 160 /usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py in from_pretrained(cls, pretrained_model_name_or_path, *model_args, **kwargs)
+205.1s 161 315                     # Only override the model name/path if the current value doesn't point to a
+205.1s 162 316                     # complete model with an embedded adapter so that local models with embedded
+205.1s 163 --> 317                     # adapters will load from the local base model rather than pull the base
+205.1s 164 318                     # model named in the adapter's config from the hub.
+205.1s 165 319                     if not os.path.exists(pretrained_model_name_or_path) or not os.path.exists(
+205.1s 166 
+205.1s 167 /usr/local/lib/python3.12/dist-packages/transformers/models/auto/configuration_auto.py in from_pretrained(cls, pretrained_model_name_or_path, **kwargs)
+205.1s 168 
+205.1s 169 /usr/local/lib/python3.12/dist-packages/transformers/models/auto/configuration_auto.py in __getitem__(self, key)
+205.1s 170 
+205.1s 171 /usr/local/lib/python3.12/dist-packages/transformers/utils/import_utils.py in __getattr__(self, name)
+205.1s 172 2096         ("sentencepiece", (is_sentencepiece_available, SENTENCEPIECE_IMPORT_ERROR)),
+205.1s 173 2097         ("sklearn", (is_sklearn_available, SKLEARN_IMPORT_ERROR)),
+205.1s 174 -> 2098         ("speech", (is_speech_available, SPEECH_IMPORT_ERROR)),
+205.1s 175 2099         ("timm", (is_timm_available, TIMM_IMPORT_ERROR)),
+205.1s 176 2100         ("torchaudio", (is_torchaudio_available, TORCHAUDIO_IMPORT_ERROR)),
+205.1s 177 
+205.1s 178 /usr/local/lib/python3.12/dist-packages/transformers/utils/import_utils.py in _get_module(self, module_name)
+205.1s 179 2286         # The elements of self.__all__ that are submodules may or may not be in the dir already, depending on whether
+205.1s 180 2287         # they have been accessed or not. So we only add the elements of self.__all__ that are not already in the dir.
+205.1s 181 -> 2288         for attr in self.__all__:
+205.1s 182 2289             if attr not in result:
+205.1s 183 2290                 result.append(attr)
+205.1s 184 
+205.1s 185 /usr/local/lib/python3.12/dist-packages/transformers/utils/import_utils.py in _get_module(self, module_name)
+205.1s 186 2284     def __dir__(self):
+205.1s 187 2285         result = list(super().__dir__())
+205.1s 188 -> 2286         # The elements of self.__all__ that are submodules may or may not be in the dir already, depending on whether
+205.1s 189 2287         # they have been accessed or not. So we only add the elements of self.__all__ that are not already in the dir.
+205.1s 190 2288         for attr in self.__all__:
+205.1s 191 
+205.1s 192 /usr/lib/python3.12/importlib/__init__.py in import_module(name, package)
+205.1s 193 88                 break
+205.1s 194 89             level += 1
+205.1s 195 ---> 90     return _bootstrap._gcd_import(name[level:], package, level)
+205.1s 196 91
+205.1s 197 92
+205.1s 198 
+205.1s 199 /usr/lib/python3.12/importlib/_bootstrap.py in _gcd_import(name, package, level)
+205.1s 200 
+205.1s 201 /usr/lib/python3.12/importlib/_bootstrap.py in _find_and_load(name, import_)
+205.1s 202 
+205.1s 203 /usr/lib/python3.12/importlib/_bootstrap.py in _find_and_load_unlocked(name, import_)
+205.1s 204 
+205.1s 205 /usr/lib/python3.12/importlib/_bootstrap.py in _load_unlocked(spec)
+205.1s 206 
+205.1s 207 /usr/lib/python3.12/importlib/_bootstrap_external.py in exec_module(self, module)
+205.1s 208 
+205.1s 209 /usr/lib/python3.12/importlib/_bootstrap.py in _call_with_frames_removed(f, *args, **kwds)
+205.1s 210 
+205.1s 211 /usr/local/lib/python3.12/dist-packages/transformers/models/qwen2/configuration_qwen2.py in <module>
+205.1s 212 22
+205.1s 213 23 @auto_docstring(checkpoint="Qwen/Qwen2-7B")
+205.1s 214 ---> 24 @strict
+205.1s 215 25 class Qwen2Config(PreTrainedConfig):
+205.1s 216 26     r"""
+205.1s 217 
+205.1s 218 /usr/local/lib/python3.12/dist-packages/huggingface_hub/dataclasses.py in strict(cls, accept_kwargs)
+205.1s 219 281
+205.1s 220 282     # Return wrapped class or the decorator itself
+205.1s 221 --> 283     return wrap(cls) if cls is not None else wrap
+205.1s 222 284
+205.1s 223 285
+205.1s 224 
+205.1s 225 /usr/local/lib/python3.12/dist-packages/huggingface_hub/dataclasses.py in wrap(cls)
+205.1s 226 112     def wrap(cls: Type[T]) -> Type[T]:
+205.1s 227 113         if not hasattr(cls, "__dataclass_fields__"):
+205.1s 228 --> 114             raise StrictDataclassDefinitionError(
+205.1s 229 115                 f"Class '{cls.__name__}' must be a dataclass before applying @strict."
+205.1s 230 116             )
+205.1s 231 
+205.1s 232 StrictDataclassDefinitionError: Class 'Qwen2Config' must be a dataclass before applying @strict.
+205.1s 233 
+207.2s 234 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+207.2s 235 cells[i][c] = re.sub('\\\\\|', '|', cell)
+207.4s 236 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+207.4s 237 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+208.0s 238 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+208.4s 239 [NbConvertApp] Writing 334264 bytes to __notebook__.ipynb
+210.9s 240 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+212.2s 241 [NbConvertApp] Writing 904083 bytes to __results__.html

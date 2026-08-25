@@ -1,0 +1,249 @@
+{
+  "run_label": "final",
+  "n_boot": 2000,
+  "generated": "2026-07-29 22:51:54",
+  "gen_fingerprint": "9ccbd3d4d051",
+  "tables": [
+    {
+      "table": "table1_descriptives",
+      "file": "table1_descriptives.csv",
+      "rows": 3,
+      "columns": [
+        "condition",
+        "n",
+        "words_mean",
+        "words_sd",
+        "len_ratio",
+        "rouge1",
+        "rouge2",
+        "rougeL",
+        "bleu",
+        "bertscore_f1",
+        "judge_mean",
+        "judge_sd"
+      ],
+      "notes": {}
+    },
+    {
+      "table": "table2_system_separation",
+      "file": "table2_system_separation.csv",
+      "rows": 6,
+      "columns": [
+        "instrument",
+        "weak_bart_mean",
+        "zero_shot_mean",
+        "few_shot_mean",
+        "rb_zero_shot_vs_weak",
+        "prop_zero_shot_higher",
+        "dz_zero_shot_vs_weak",
+        "rb_few_shot_vs_weak",
+        "prop_few_shot_higher",
+        "dz_few_shot_vs_weak"
+      ],
+      "notes": {}
+    },
+    {
+      "table": "table3_pooled_vs_adjusted",
+      "file": "table3_pooled_vs_adjusted.csv",
+      "rows": 5,
+      "columns": [
+        "metric",
+        "pooled",
+        "pooled_lo",
+        "pooled_hi",
+        "adjusted",
+        "adjusted_lo",
+        "adjusted_hi",
+        "adj_plus_length",
+        "adjlen_lo",
+        "adjlen_hi",
+        "pct_of_pooled_lost",
+        "n_valid_pooled",
+        "n_valid_adjusted",
+        "n_boot"
+      ],
+      "notes": {}
+    },
+    {
+      "table": "table4_within_condition",
+      "file": "table4_within_condition.csv",
+      "rows": 15,
+      "columns": [
+        "condition",
+        "metric",
+        "rho",
+        "lo",
+        "hi",
+        "ci_excludes_zero",
+        "n_valid",
+        "n_boot"
+      ],
+      "notes": {}
+    },
+    {
+      "table": "table5_metric_contrasts",
+      "file": "table5_metric_contrasts.csv",
+      "rows": 10,
+      "columns": [
+        "contrast",
+        "diff",
+        "lo",
+        "hi",
+        "p",
+        "ci_excludes_zero"
+      ],
+      "notes": {}
+    },
+    {
+      "table": "table6_weak_vs_good",
+      "file": "table6_weak_vs_good.csv",
+      "rows": 10,
+      "columns": [
+        "metric",
+        "good_tier",
+        "diff",
+        "lo",
+        "hi",
+        "p",
+        "ci_excludes_zero"
+      ],
+      "notes": {}
+    },
+    {
+      "table": "table7_divergence",
+      "file": "table7_divergence.csv",
+      "rows": 15,
+      "columns": [
+        "condition",
+        "metric",
+        "n_high",
+        "base_rate",
+        "divergence",
+        "risk_difference",
+        "lo",
+        "hi",
+        "enriched"
+      ],
+      "notes": {}
+    },
+    {
+      "table": "table8_judge_behaviour",
+      "file": "table8_judge_behaviour.csv",
+      "rows": 3,
+      "columns": [
+        "condition",
+        "judge_vs_words",
+        "judge_vs_len_ratio",
+        "judge_distinct_values"
+      ],
+      "notes": {
+        "pooled_distinct_values": "10",
+        "modal_share": "0.5480984340044742"
+      }
+    },
+    {
+      "table": "table9_judge_dimensions",
+      "file": "table9_judge_dimensions.csv",
+      "rows": 20,
+      "columns": [
+        "dimension",
+        "metric",
+        "pooled",
+        "adjusted"
+      ],
+      "notes": {}
+    },
+    {
+      "table": "table10_judge_sensitivity",
+      "file": "table10_judge_sensitivity.csv",
+      "rows": 5,
+      "columns": [
+        "metric",
+        "adjusted_primary",
+        "adjusted_sens",
+        "sens_lo",
+        "sens_hi",
+        "diff_primary_minus_sens",
+        "diff_lo",
+        "diff_hi",
+        "diff_p",
+        "judges_differ"
+      ],
+      "notes": {
+        "inter_judge_rho": "0.6062594092305112",
+        "inter_judge_ci": "(0.5577, 0.6533)"
+      }
+    },
+    {
+      "table": "table11_fewshot_vs_zeroshot",
+      "file": "table11_fewshot_vs_zeroshot.csv",
+      "rows": 1,
+      "columns": [
+        "zero_shot_mean",
+        "few_shot_mean",
+        "mean_difference",
+        "lo",
+        "hi",
+        "cohens_d_paired",
+        "wilcoxon_p"
+      ],
+      "notes": {}
+    },
+    {
+      "table": "table12_summeval_dataset_level",
+      "file": "table12_summeval_dataset_level.csv",
+      "rows": 7,
+      "columns": [
+        "instrument",
+        "rho_dataset_level",
+        "lo",
+        "hi"
+      ],
+      "notes": {}
+    },
+    {
+      "table": "table13_summeval_summary_level",
+      "file": "table13_summeval_summary_level.csv",
+      "rows": 7,
+      "columns": [
+        "instrument",
+        "avg_drop",
+        "coherence_drop",
+        "consistency_drop",
+        "fluency_drop",
+        "relevance_drop",
+        "avg_zero",
+        "coherence_zero",
+        "consistency_zero",
+        "fluency_zero",
+        "relevance_zero",
+        "avg_drop_lo",
+        "avg_drop_hi",
+        "n_articles_coherence",
+        "n_articles_consistency",
+        "n_articles_fluency",
+        "n_articles_relevance",
+        "n_valid"
+      ],
+      "notes": {
+        "note": "G-Eval reports 0.514 on this statistic with GPT-4. That figure uses a different judge, prompt, subset and dataset revision, so treat it as literature context rather than a benchmark this run is scored against."
+      }
+    },
+    {
+      "table": "table14_judge_vs_metrics_on_humans",
+      "file": "table14_judge_vs_metrics_on_humans.csv",
+      "rows": 5,
+      "columns": [
+        "metric",
+        "rho_metric",
+        "rho_judge",
+        "diff",
+        "lo",
+        "hi",
+        "p",
+        "ci_excludes_zero"
+      ],
+      "notes": {}
+    }
+  ]
+}

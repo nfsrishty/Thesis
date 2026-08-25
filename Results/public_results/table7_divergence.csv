@@ -1,0 +1,16 @@
+condition,metric,n_high,base_rate,divergence,risk_difference,lo,hi,enriched
+weak_bart,rouge1,74,0.4116,0.2432,-0.1683,-0.2628,-0.0778,False
+weak_bart,rouge2,76,0.4116,0.2105,-0.201,-0.3013,-0.1148,False
+weak_bart,rougeL,74,0.4116,0.1757,-0.2359,-0.3097,-0.1337,False
+weak_bart,bleu,74,0.4116,0.1622,-0.2494,-0.32,-0.161,False
+weak_bart,bertscore_f1,74,0.4116,0.1486,-0.2629,-0.351,-0.1946,False
+zero_shot,rouge1,75,0.06,0.0,-0.06,-0.0867,-0.03,False
+zero_shot,rouge2,75,0.06,0.0,-0.06,-0.0867,-0.0366,False
+zero_shot,rougeL,75,0.06,0.0,-0.06,-0.0867,-0.0366,False
+zero_shot,bleu,75,0.06,0.0133,-0.0467,-0.0767,-0.0137,False
+zero_shot,bertscore_f1,75,0.06,0.0133,-0.0467,-0.08,-0.0133,False
+few_shot,rouge1,75,0.0433,0.0133,-0.03,-0.06,0.0,False
+few_shot,rouge2,75,0.0433,0.0,-0.0433,-0.0667,-0.0233,False
+few_shot,rougeL,75,0.0433,0.0,-0.0433,-0.0667,-0.0233,False
+few_shot,bleu,75,0.0433,0.0133,-0.03,-0.0567,0.0,False
+few_shot,bertscore_f1,75,0.0433,0.0,-0.0433,-0.0667,-0.0233,False

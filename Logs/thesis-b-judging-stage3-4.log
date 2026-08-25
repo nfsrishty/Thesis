@@ -1,0 +1,176 @@
+7.7s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.7s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.7s 3 0.00s - to python to disable frozen modules.
+7.7s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.3s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.3s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.3s 7 0.00s - to python to disable frozen modules.
+8.3s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.4s 9 /kaggle/input/notebooks/kaziushno/thesis-b-judging/truncation_report.csv
+9.4s 10 /kaggle/input/notebooks/kaziushno/thesis-b-judging/experiment_config.json
+9.4s 11 /kaggle/input/notebooks/kaziushno/thesis-b-judging/metrics_long.csv
+9.4s 12 /kaggle/input/notebooks/kaziushno/thesis-b-judging/provenance.json
+9.4s 13 /kaggle/input/notebooks/kaziushno/thesis-b-judging/__results__.html
+9.4s 14 /kaggle/input/notebooks/kaziushno/thesis-b-judging/selected_cases.csv
+9.4s 15 /kaggle/input/notebooks/kaziushno/thesis-b-judging/generated_summaries.csv
+9.4s 16 /kaggle/input/notebooks/kaziushno/thesis-b-judging/__huggingface_repos__.json
+9.4s 17 /kaggle/input/notebooks/kaziushno/thesis-b-judging/__notebook__.ipynb
+9.4s 18 /kaggle/input/notebooks/kaziushno/thesis-b-judging/__output__.json
+9.4s 19 /kaggle/input/notebooks/kaziushno/thesis-b-judging/gen_checkpoint.jsonl
+9.4s 20 /kaggle/input/notebooks/kaziushno/thesis-b-judging/custom.css
+9.4s 21 /kaggle/input/datasets/aminexdr/bhc-mimic-iv-summary/BHC_MIMIC-IV.csv
+16.2s 22 imported 7 expected file(s) from /kaggle/input/notebooks/kaziushno/thesis-b-judging
+16.2s 23 ignored 2 unrecognised file(s): ['__huggingface_repos__.json', '__output__.json']
+16.2s 24 parser self-test: passed
+17.8s 25 statistics self-test: passed
+21.1s 26 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.9/40.9 MB 44.8 MB/s eta 0:00:00
+21.2s 27 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 kB 6.3 MB/s eta 0:00:00
+21.2s 28 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.1/61.1 kB 3.2 MB/s eta 0:00:00
+21.3s 29 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.9/40.9 MB 44.8 MB/s eta 0:00:00
+21.3s 30 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 kB 6.3 MB/s eta 0:00:00
+21.3s 31 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.1/61.1 kB 3.2 MB/s eta 0:00:00
+44.1s 32 NOTE: provenance.json exists but has no stage_1 entry.
+44.1s 33 Generation provenance is UNVERIFIED; using structural checks.
+44.1s 34 resuming with 0 judgement(s) already recorded
+44.1s 35 
+44.1s 36 loading judge14: Qwen/Qwen2.5-14B-Instruct  (900 to judge)
+44.3s 37 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+44.3s 38 
+44.3s 39 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+44.3s 40 available GPUs: 2; model memory limits: {0: '11GiB', 1: '11GiB', 'cpu': '24GiB'}
+46.3s 41 `torch_dtype` is deprecated! Use `dtype` instead!
+46.3s 42 
+46.3s 43 `torch_dtype` is deprecated! Use `dtype` instead!
+363.1s 44 device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 1, 'model.layers.17': 1, 'model.layers.18': 1, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 1, 'model.layers.41': 1, 'model.layers.42': 1, 'model.layers.43': 1, 'model.layers.44': 1, 'model.layers.45': 1, 'model.layers.46': 1, 'model.layers.47': 1, 'model.norm': 1, 'model.rotary_emb': 1, 'lm_head': 1}
+363.1s 45 The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+363.1s 46 
+363.1s 47 The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+7081.4s 48 judge14 done and unloaded
+7081.4s 49 
+7081.4s 50 loading judge7: Qwen/Qwen2.5-7B-Instruct  (900 to judge)
+7081.5s 51 available GPUs: 2; model memory limits: {0: '11GiB', 1: '11GiB', 'cpu': '24GiB'}
+7182.4s 52 device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 1, 'model.layers.6': 1, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 1, 'model.layers.17': 1, 'model.layers.18': 1, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.norm': 1, 'model.rotary_emb': 1, 'lm_head': 1}
+9777.4s 53 judge7 done and unloaded
+9777.4s 54 
+9777.4s 55 parse coverage:
+9777.4s 56 judge14   900 outputs, 99.3% parsed ({'ok_labelled': 894, 'unparsed_0_bare_digits': 6})
+9777.4s 57 judge7    900 outputs, 100.0% parsed ({'ok_labelled': 900})
+9777.4s 58 judge14 coverage 99.3%, parsed 99.3%
+9777.4s 59 judge7 coverage 100.0%, parsed 100.0%
+9777.7s 60 
+9777.7s 61 saved master file: /kaggle/working/clinical_results_final.csv  (900 rows x 27 cols)
+9777.7s 62 
+9777.7s 63 judge means by condition:
+9777.7s 64 judge14_mean        judge7_mean
+9777.7s 65 mean    std        mean    std
+9777.7s 66 condition
+9777.7s 67 weak_bart        2.779  0.509       2.543  0.549
+9777.7s 68 zero_shot        3.204  0.428       3.079  0.502
+9777.7s 69 few_shot         3.237  0.427       3.152  0.522
+9780.5s 70 recorded provenance for stage 3
+9780.5s 71 wrote judge_audit_sheet.csv (90 rows, both judges) for manual review
+9780.5s 72 
+9780.5s 73 ==============================================================================
+9780.5s 74 STAGE 4  SummEval validation against human expert ratings
+9780.5s 75 ==============================================================================
+9783.6s 76 SummEval resolved revision: bfc121155064afa2d81b5505682ffc0d96f4334c
+9783.6s 77 human dimensions: ['coherence', 'consistency', 'fluency', 'relevance']
+9783.6s 78 sampled 50 of 100 articles (seed 42)
+9783.6s 79 800 summaries = 50 articles x 16 systems (whole articles are required for the summary-level statistic)
+9783.6s 80 
+9783.6s 81 loading judge14: Qwen/Qwen2.5-14B-Instruct  (800 to judge)
+9783.8s 82 available GPUs: 2; model memory limits: {0: '11GiB', 1: '11GiB', 'cpu': '24GiB'}
+10059.2s 83 device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 1, 'model.layers.17': 1, 'model.layers.18': 1, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 1, 'model.layers.41': 1, 'model.layers.42': 1, 'model.layers.43': 1, 'model.layers.44': 1, 'model.layers.45': 1, 'model.layers.46': 1, 'model.layers.47': 1, 'model.norm': 1, 'model.rotary_emb': 1, 'lm_head': 1}
+14814.5s 84 judge14 done and unloaded
+14814.5s 85 
+14814.5s 86 loading judge7: Qwen/Qwen2.5-7B-Instruct  (800 to judge)
+14814.7s 87 available GPUs: 2; model memory limits: {0: '11GiB', 1: '11GiB', 'cpu': '24GiB'}
+14898.0s 88 device map: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 1, 'model.layers.6': 1, 'model.layers.7': 1, 'model.layers.8': 1, 'model.layers.9': 1, 'model.layers.10': 1, 'model.layers.11': 1, 'model.layers.12': 1, 'model.layers.13': 1, 'model.layers.14': 1, 'model.layers.15': 1, 'model.layers.16': 1, 'model.layers.17': 1, 'model.layers.18': 1, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.norm': 1, 'model.rotary_emb': 1, 'lm_head': 1}
+16820.5s 89 judge7 done and unloaded
+16820.5s 90 judge14: 100.0% parsed
+16820.5s 91 judge7: 100.0% parsed
+16820.5s 92 judge14 coverage 100.0%
+16820.5s 93 judge7 coverage 100.0%
+16877.2s 94 RobertaModel LOAD REPORT from: roberta-large
+16877.2s 95 Key                             | Status     |
+16877.2s 96 --------------------------------+------------+-
+16877.2s 97 lm_head.dense.weight            | UNEXPECTED |
+16877.2s 98 lm_head.layer_norm.weight       | UNEXPECTED |
+16877.2s 99 lm_head.layer_norm.bias         | UNEXPECTED |
+16877.2s 100 lm_head.bias                    | UNEXPECTED |
+16877.2s 101 lm_head.dense.bias              | UNEXPECTED |
+16877.2s 102 roberta.embeddings.position_ids | UNEXPECTED |
+16877.2s 103 pooler.dense.weight             | MISSING    |
+16877.2s 104 pooler.dense.bias               | MISSING    |
+16877.2s 105 
+16877.2s 106 Notes:
+16877.2s 107 - UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+16877.2s 108 - MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+16877.2s 109 
+16877.2s 110 RobertaModel LOAD REPORT from: roberta-large
+16877.2s 111 Key                             | Status     |
+16877.2s 112 --------------------------------+------------+-
+16877.2s 113 lm_head.dense.weight            | UNEXPECTED |
+16877.2s 114 lm_head.layer_norm.weight       | UNEXPECTED |
+16877.2s 115 lm_head.layer_norm.bias         | UNEXPECTED |
+16877.2s 116 lm_head.bias                    | UNEXPECTED |
+16877.2s 117 lm_head.dense.bias              | UNEXPECTED |
+16877.2s 118 roberta.embeddings.position_ids | UNEXPECTED |
+16877.2s 119 pooler.dense.weight             | MISSING    |
+16877.2s 120 pooler.dense.bias               | MISSING    |
+16877.2s 121 
+16877.2s 122 Notes:
+16877.2s 123 - UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+16877.2s 124 - MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+16877.4s 125 calculating scores...
+16877.4s 126 computing bert embedding.
+16890.8s 127 computing greedy matching.
+16893.7s 128 done in 16.17 seconds, 544.23 sentences/sec
+16895.3s 129 RobertaModel LOAD REPORT from: roberta-large
+16895.3s 130 Key                             | Status     |
+16895.3s 131 --------------------------------+------------+-
+16895.3s 132 lm_head.dense.weight            | UNEXPECTED |
+16895.3s 133 lm_head.layer_norm.weight       | UNEXPECTED |
+16895.3s 134 lm_head.layer_norm.bias         | UNEXPECTED |
+16895.3s 135 lm_head.bias                    | UNEXPECTED |
+16895.3s 136 lm_head.dense.bias              | UNEXPECTED |
+16895.3s 137 roberta.embeddings.position_ids | UNEXPECTED |
+16895.3s 138 pooler.dense.weight             | MISSING    |
+16895.3s 139 pooler.dense.bias               | MISSING    |
+16895.3s 140 
+16895.3s 141 Notes:
+16895.3s 142 - UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+16895.3s 143 - MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+16895.3s 144 
+16895.3s 145 RobertaModel LOAD REPORT from: roberta-large
+16895.3s 146 Key                             | Status     |
+16895.3s 147 --------------------------------+------------+-
+16895.3s 148 lm_head.dense.weight            | UNEXPECTED |
+16895.3s 149 lm_head.layer_norm.weight       | UNEXPECTED |
+16895.3s 150 lm_head.layer_norm.bias         | UNEXPECTED |
+16895.3s 151 lm_head.bias                    | UNEXPECTED |
+16895.3s 152 lm_head.dense.bias              | UNEXPECTED |
+16895.3s 153 roberta.embeddings.position_ids | UNEXPECTED |
+16895.3s 154 pooler.dense.weight             | MISSING    |
+16895.3s 155 pooler.dense.bias               | MISSING    |
+16895.3s 156 
+16895.3s 157 Notes:
+16895.3s 158 - UNEXPECTED	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+16895.3s 159 - MISSING	:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+16895.5s 160 calculating scores...
+16895.5s 161 computing bert embedding.
+16905.2s 162 computing greedy matching.
+16905.6s 163 done in 10.04 seconds, 79.71 sentences/sec
+16905.6s 164 recorded provenance for stage 4
+16905.6s 165 
+16905.6s 166 saved /kaggle/working/summeval_final.csv (800 rows)
+16905.6s 167 judge14 vs human_overall (dataset-level): rho = +0.443
+16905.6s 168 judge7 vs human_overall (dataset-level): rho = +0.380
+16913.1s 169 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+16913.1s 170 cells[i][c] = re.sub('\\\\\|', '|', cell)
+16913.4s 171 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+16913.4s 172 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+16914.3s 173 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+16914.8s 174 [NbConvertApp] Writing 630547 bytes to __notebook__.ipynb
+16917.1s 175 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+16918.6s 176 [NbConvertApp] Writing 1143105 bytes to __results__.html

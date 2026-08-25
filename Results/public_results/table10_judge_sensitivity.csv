@@ -1,0 +1,6 @@
+metric,adjusted_primary,adjusted_sens,sens_lo,sens_hi,diff_primary_minus_sens,diff_lo,diff_hi,diff_p,judges_differ
+rouge1,0.1504,0.2214,0.1458,0.2977,-0.071,-0.1433,-0.001,0.048,True
+rouge2,0.2528,0.2886,0.2139,0.3597,-0.0358,-0.1086,0.0361,0.3048,False
+rougeL,0.2037,0.2159,0.1388,0.2926,-0.0122,-0.0882,0.0602,0.7206,False
+bleu,0.1996,0.1307,0.0548,0.2094,0.0689,-0.0082,0.1432,0.083,False
+bertscore_f1,0.3425,0.3673,0.294,0.4368,-0.0248,-0.0972,0.0477,0.4898,False

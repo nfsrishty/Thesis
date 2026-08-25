@@ -1,0 +1,2 @@
+zero_shot_mean,few_shot_mean,mean_difference,lo,hi,cohens_d_paired,wilcoxon_p
+3.2063,3.2415,0.0351,-0.0045,0.076,0.1,0.1101

@@ -1,0 +1,319 @@
+8.7s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.7s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.7s 3 0.00s - to python to disable frozen modules.
+8.7s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+9.4s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+9.4s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+9.4s 7 0.00s - to python to disable frozen modules.
+9.4s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+10.5s 9 /kaggle/input/datasets/aminexdr/bhc-mimic-iv-summary/BHC_MIMIC-IV.csv
+10.5s 10 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/truncation_report.csv
+10.5s 11 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/experiment_config.json
+10.5s 12 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/judge_audit_sheet.csv
+10.5s 13 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/metrics_long.csv
+10.5s 14 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/provenance.json
+10.5s 15 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/model_revisions.json
+10.5s 16 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/__results__.html
+10.5s 17 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/judge_raw_clinical.jsonl
+10.5s 18 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/selected_cases.csv
+10.5s 19 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/generated_summaries.csv
+10.5s 20 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/__huggingface_repos__.json
+10.5s 21 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/summeval_final.csv
+10.5s 22 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/__notebook__.ipynb
+10.5s 23 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/__output__.json
+10.5s 24 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/gen_checkpoint.jsonl
+10.5s 25 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/judge_raw_summeval.jsonl
+10.5s 26 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/clinical_results_final.csv
+10.5s 27 /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4/custom.css
+17.7s 28 auto-detected Session B output: /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4
+18.1s 29 imported 13 expected file(s) from /kaggle/input/notebooks/kaziushno/thesis-b-judging-stage3-4
+18.1s 30 ignored 2 unrecognised file(s): ['__huggingface_repos__.json', '__output__.json']
+18.1s 31 imported experiment configuration verified
+18.1s 32 parser self-test: passed
+19.7s 33 statistics self-test: passed
+19.7s 34 
+19.7s 35 ==============================================================================
+19.7s 36 STAGE 5  analysis
+19.7s 37 ==============================================================================
+20.0s 38 clinical and SummEval input validation passed
+20.4s 39 900 rows, 300 cases, 2000 shared case-clustered draws
+369.8s 40 
+369.8s 41 ### table1_descriptives
+369.8s 42 condition   n  words_mean  words_sd  len_ratio  rouge1  rouge2  rougeL   bleu  bertscore_f1  judge_mean  judge_sd
+369.8s 43 weak_bart 300     53.9667   12.3065     0.2455  0.1845  0.0569  0.1233 1.6682       -0.0341      2.7789    0.5092
+369.8s 44 zero_shot 300    203.5233   48.9441     0.8840  0.3199  0.0738  0.1610 3.2245       -0.0210      3.2044    0.4281
+369.8s 45 few_shot 300    213.1233   50.0101     0.9235  0.3314  0.0795  0.1681 3.5864       -0.0142      3.2367    0.4275
+369.8s 46 
+369.8s 47 ### table2_system_separation
+369.8s 48 instrument  weak_bart_mean  zero_shot_mean  few_shot_mean  rb_zero_shot_vs_weak  prop_zero_shot_higher  dz_zero_shot_vs_weak  rb_few_shot_vs_weak  prop_few_shot_higher  dz_few_shot_vs_weak
+369.8s 49 rouge1          0.1845          0.3199         0.3314                0.8505                 0.8867                1.0873               0.8617                0.8800               1.1654
+369.8s 50 rouge2          0.0569          0.0738         0.0795                0.5063                 0.7800                0.2242               0.5498                0.7867               0.3008
+369.8s 51 rougeL          0.1233          0.1610         0.1681                0.6652                 0.8167                0.4696               0.6748                0.8367               0.5504
+369.8s 52 bleu          1.6682          3.2245         3.5864                0.6946                 0.8467                0.2845               0.7042                0.8567               0.3452
+369.8s 53 bertscore_f1         -0.0341         -0.0210        -0.0142                0.2346                 0.6233                0.1061               0.2707                0.6100               0.1634
+369.8s 54 judge14_mean          2.7789          3.2044         3.2367                0.8799                 0.6020                0.8028               0.8773                0.6361               0.8518
+369.8s 55 
+369.8s 56 ### table3_pooled_vs_adjusted
+369.8s 57 metric  pooled  pooled_lo  pooled_hi  adjusted  adjusted_lo  adjusted_hi  adj_plus_length  adjlen_lo  adjlen_hi  pct_of_pooled_lost  n_valid_pooled  n_valid_adjusted  n_boot
+369.8s 58 rouge1  0.3547     0.2804     0.4271    0.1504       0.0782       0.2234           0.1625     0.0837     0.2403             57.5858            2000              2000    2000
+369.8s 59 rouge2  0.3981     0.3325     0.4587    0.2528       0.1763       0.3239           0.2838     0.2057     0.3532             36.4901            2000              2000    2000
+369.8s 60 rougeL  0.3801     0.3133     0.4472    0.2037       0.1272       0.2769           0.1850     0.1055     0.2598             46.4126            2000              2000    2000
+369.8s 61 bleu  0.4099     0.3524     0.4690    0.1996       0.1230       0.2755           0.1442     0.0652     0.2271             51.2930            2000              2000    2000
+369.8s 62 bertscore_f1  0.3710     0.3082     0.4289    0.3425       0.2747       0.4044           0.3261     0.2530     0.3879              7.6880            2000              2000    2000
+369.8s 63 
+369.8s 64 ### table4_within_condition
+369.8s 65 condition       metric    rho      lo     hi  ci_excludes_zero  n_valid  n_boot
+369.8s 66 weak_bart       rouge1 0.3635  0.2541 0.4699              True     2000    2000
+369.8s 67 weak_bart       rouge2 0.3893  0.2791 0.4936              True     2000    2000
+369.8s 68 weak_bart       rougeL 0.3903  0.2813 0.4934              True     2000    2000
+369.8s 69 weak_bart         bleu 0.3210  0.2076 0.4304              True     2000    2000
+369.8s 70 weak_bart bertscore_f1 0.4400  0.3431 0.5378              True     2000    2000
+369.8s 71 zero_shot       rouge1 0.0530 -0.0762 0.1823             False     2000    2000
+369.8s 72 zero_shot       rouge2 0.1348  0.0158 0.2507              True     2000    2000
+369.8s 73 zero_shot       rougeL 0.0289 -0.0962 0.1535             False     2000    2000
+369.8s 74 zero_shot         bleu 0.0799 -0.0385 0.1989             False     2000    2000
+369.8s 75 zero_shot bertscore_f1 0.2232  0.1139 0.3281              True     2000    2000
+369.8s 76 few_shot       rouge1 0.0228 -0.0990 0.1495             False     2000    2000
+369.8s 77 few_shot       rouge2 0.1929  0.0775 0.3041              True     2000    2000
+369.8s 78 few_shot       rougeL 0.1156 -0.0132 0.2394             False     2000    2000
+369.8s 79 few_shot         bleu 0.1350  0.0163 0.2567              True     2000    2000
+369.8s 80 few_shot bertscore_f1 0.3461  0.2429 0.4404              True     2000    2000
+369.8s 81 
+369.8s 82 ### table5_metric_contrasts
+369.8s 83 contrast    diff      lo      hi      p  ci_excludes_zero
+369.8s 84 rouge1 - rouge2 -0.1024 -0.1646 -0.0380 0.0020              True
+369.8s 85 rouge1 - rougeL -0.0532 -0.1005 -0.0074 0.0230              True
+369.8s 86 rouge1 - bleu -0.0492 -0.1131  0.0134 0.1289             False
+369.8s 87 rouge1 - bertscore_f1 -0.1921 -0.2630 -0.1202 0.0010              True
+369.8s 88 rouge2 - rougeL  0.0491  0.0020  0.0952 0.0440              True
+369.8s 89 rouge2 - bleu  0.0532 -0.0060  0.1108 0.0840             False
+369.8s 90 rouge2 - bertscore_f1 -0.0897 -0.1443 -0.0347 0.0040              True
+369.8s 91 rougeL - bleu  0.0040 -0.0430  0.0509 0.8626             False
+369.8s 92 rougeL - bertscore_f1 -0.1388 -0.1950 -0.0804 0.0010              True
+369.8s 93 bleu - bertscore_f1 -0.1429 -0.2095 -0.0683 0.0010              True
+369.8s 94 
+369.8s 95 ### table6_weak_vs_good
+369.8s 96 metric good_tier   diff      lo     hi      p  ci_excludes_zero
+369.8s 97 rouge1 zero_shot 0.3105  0.1246 0.4879 0.0010              True
+369.8s 98 rouge1  few_shot 0.3407  0.1749 0.5186 0.0010              True
+369.8s 99 rouge2 zero_shot 0.2546  0.0966 0.4158 0.0030              True
+369.8s 100 rouge2  few_shot 0.1964  0.0400 0.3451 0.0120              True
+369.8s 101 rougeL zero_shot 0.3614  0.1945 0.5272 0.0010              True
+369.8s 102 rougeL  few_shot 0.2747  0.1070 0.4436 0.0020              True
+369.8s 103 bleu zero_shot 0.2410  0.0801 0.4077 0.0020              True
+369.8s 104 bleu  few_shot 0.1860  0.0239 0.3565 0.0240              True
+369.8s 105 bertscore_f1 zero_shot 0.2168  0.0707 0.3589 0.0100              True
+369.8s 106 bertscore_f1  few_shot 0.0939 -0.0445 0.2400 0.1959             False
+369.8s 107 
+369.8s 108 ### table7_divergence
+369.8s 109 condition       metric  n_high  base_rate  divergence  risk_difference      lo      hi  enriched
+369.8s 110 weak_bart       rouge1      74     0.4116      0.2432          -0.1683 -0.2628 -0.0778     False
+369.8s 111 weak_bart       rouge2      76     0.4116      0.2105          -0.2010 -0.3013 -0.1148     False
+369.8s 112 weak_bart       rougeL      74     0.4116      0.1757          -0.2359 -0.3097 -0.1337     False
+369.8s 113 weak_bart         bleu      74     0.4116      0.1622          -0.2494 -0.3200 -0.1610     False
+369.8s 114 weak_bart bertscore_f1      74     0.4116      0.1486          -0.2629 -0.3510 -0.1946     False
+369.8s 115 zero_shot       rouge1      75     0.0600      0.0000          -0.0600 -0.0867 -0.0300     False
+369.8s 116 zero_shot       rouge2      75     0.0600      0.0000          -0.0600 -0.0867 -0.0366     False
+369.8s 117 zero_shot       rougeL      75     0.0600      0.0000          -0.0600 -0.0867 -0.0366     False
+369.8s 118 zero_shot         bleu      75     0.0600      0.0133          -0.0467 -0.0767 -0.0137     False
+369.8s 119 zero_shot bertscore_f1      75     0.0600      0.0133          -0.0467 -0.0800 -0.0133     False
+369.8s 120 few_shot       rouge1      75     0.0433      0.0133          -0.0300 -0.0600  0.0000     False
+369.8s 121 few_shot       rouge2      75     0.0433      0.0000          -0.0433 -0.0667 -0.0233     False
+369.8s 122 few_shot       rougeL      75     0.0433      0.0000          -0.0433 -0.0667 -0.0233     False
+369.8s 123 few_shot         bleu      75     0.0433      0.0133          -0.0300 -0.0567  0.0000     False
+369.8s 124 few_shot bertscore_f1      75     0.0433      0.0000          -0.0433 -0.0667 -0.0233     False
+369.8s 125 
+369.8s 126 ### table8_judge_behaviour
+369.8s 127 condition  judge_vs_words  judge_vs_len_ratio  judge_distinct_values
+369.8s 128 weak_bart         -0.0879              0.2020                      9
+369.8s 129 zero_shot          0.1395              0.3024                      8
+369.8s 130 few_shot          0.0278              0.2934                      9
+369.8s 131 [pooled_distinct_values] 10
+369.8s 132 [modal_share] 0.5480984340044742
+369.8s 133 
+369.8s 134 ### table9_judge_dimensions
+369.8s 135 dimension       metric  pooled  adjusted
+369.8s 136 consistency       rouge1  0.2879    0.1512
+369.8s 137 consistency       rouge2  0.3642    0.2502
+369.8s 138 consistency       rougeL  0.3151    0.1782
+369.8s 139 consistency         bleu  0.2885    0.1366
+369.8s 140 consistency bertscore_f1  0.3567    0.3130
+369.8s 141 completeness       rouge1  0.2581    0.0813
+369.8s 142 completeness       rouge2  0.2832    0.1645
+369.8s 143 completeness       rougeL  0.2786    0.1215
+369.8s 144 completeness         bleu  0.3092    0.1252
+369.8s 145 completeness bertscore_f1  0.2677    0.2400
+369.8s 146 coherence       rouge1  0.2819    0.0091
+369.8s 147 coherence       rouge2  0.3112    0.1316
+369.8s 148 coherence       rougeL  0.3190    0.1049
+369.8s 149 coherence         bleu  0.3931    0.1260
+369.8s 150 coherence bertscore_f1  0.2643    0.2200
+369.8s 151 mean       rouge1  0.3547    0.1504
+369.8s 152 mean       rouge2  0.3981    0.2528
+369.8s 153 mean       rougeL  0.3801    0.2037
+369.8s 154 mean         bleu  0.4099    0.1996
+369.8s 155 mean bertscore_f1  0.3710    0.3425
+369.8s 156 
+369.8s 157 ### table10_judge_sensitivity
+369.8s 158 metric  adjusted_primary  adjusted_sens  sens_lo  sens_hi  diff_primary_minus_sens  diff_lo  diff_hi  diff_p  judges_differ
+369.8s 159 rouge1            0.1504         0.2214   0.1458   0.2977                  -0.0710  -0.1433  -0.0010  0.0480           True
+369.8s 160 rouge2            0.2528         0.2886   0.2139   0.3597                  -0.0358  -0.1086   0.0361  0.3048          False
+369.8s 161 rougeL            0.2037         0.2159   0.1388   0.2926                  -0.0122  -0.0882   0.0602  0.7206          False
+369.8s 162 bleu            0.1996         0.1307   0.0548   0.2094                   0.0689  -0.0082   0.1432  0.0830          False
+369.8s 163 bertscore_f1            0.3425         0.3673   0.2940   0.4368                  -0.0248  -0.0972   0.0477  0.4898          False
+369.8s 164 [inter_judge_rho] 0.6062594092305112
+369.8s 165 [inter_judge_ci] (0.5577, 0.6533)
+369.8s 166 
+369.8s 167 ### table11_fewshot_vs_zeroshot
+369.8s 168 zero_shot_mean  few_shot_mean  mean_difference      lo    hi  cohens_d_paired  wilcoxon_p
+369.8s 169 3.2063         3.2415           0.0351 -0.0045 0.076              0.1      0.1101
+369.8s 170 
+369.8s 171 ### table12_summeval_dataset_level
+369.8s 172 instrument  rho_dataset_level     lo     hi
+369.8s 173 rouge1             0.2845 0.2122 0.3576
+369.8s 174 rouge2             0.1948 0.1155 0.2792
+369.8s 175 rougeL             0.2279 0.1277 0.3208
+369.8s 176 bleu             0.2576 0.1777 0.3384
+369.8s 177 bertscore_f1             0.2862 0.1954 0.3791
+369.8s 178 judge14             0.4434 0.3812 0.5055
+369.8s 179 judge7             0.3804 0.3194 0.4389
+369.8s 180 
+369.8s 181 ### table13_summeval_summary_level
+369.8s 182 instrument  avg_drop  coherence_drop  consistency_drop  fluency_drop  relevance_drop  avg_zero  coherence_zero  consistency_zero  fluency_zero  relevance_zero  avg_drop_lo  avg_drop_hi  n_articles_coherence  n_articles_consistency  n_articles_fluency  n_articles_relevance  n_valid
+369.8s 183 rouge1    0.1809          0.1546            0.1730        0.1375          0.2583    0.1809          0.1546            0.1730        0.1375          0.2583       0.1227       0.2356                    50                      47                  49                    50     2000
+369.8s 184 rouge2    0.1500          0.1337            0.1833        0.1115          0.1716    0.1500          0.1337            0.1833        0.1115          0.1716       0.0909       0.2053                    50                      47                  49                    50     2000
+369.8s 185 rougeL    0.1619          0.1903            0.1762        0.0939          0.1871    0.1619          0.1903            0.1762        0.0939          0.1871       0.0971       0.2225                    50                      47                  49                    50     2000
+369.8s 186 bleu    0.1627          0.1908            0.1432        0.1288          0.1881    0.1627          0.1908            0.1432        0.1288          0.1881       0.1056       0.2199                    50                      47                  49                    50     2000
+369.8s 187 bertscore_f1    0.1960          0.2946            0.0799        0.1692          0.2402    0.1960          0.2946            0.0799        0.1692          0.2402       0.1342       0.2561                    50                      47                  49                    50     2000
+369.8s 188 judge14    0.3894          0.3510            0.4167        0.4172          0.3727    0.3894          0.3510            0.4167        0.4172          0.3727       0.3461       0.4346                    50                      47                  49                    50     2000
+369.8s 189 judge7    0.3253          0.3126            0.3562        0.3355          0.2971    0.3253          0.3126            0.3562        0.3355          0.2971       0.2796       0.3720                    50                      47                  49                    50     2000
+369.8s 190 [note] G-Eval reports 0.514 on this statistic with GPT-4. That figure uses a different judge, prompt, subset and dataset revision, so treat it as literature context rather than a benchmark this run is scored against.
+369.8s 191 
+369.8s 192 ### table14_judge_vs_metrics_on_humans
+369.8s 193 metric  rho_metric  rho_judge   diff     lo     hi     p  ci_excludes_zero
+369.8s 194 rouge1      0.2845     0.4434 0.1589 0.0845 0.2390 0.001              True
+369.8s 195 rouge2      0.1948     0.4434 0.2487 0.1609 0.3404 0.001              True
+369.8s 196 rougeL      0.2279     0.4434 0.2155 0.1240 0.3144 0.001              True
+369.8s 197 bleu      0.2576     0.4434 0.1858 0.1017 0.2732 0.001              True
+369.8s 198 bertscore_f1      0.2862     0.4434 0.1573 0.0690 0.2458 0.001              True
+388.7s 199 recorded provenance for stage 5
+388.7s 200 
+388.7s 201 wrote 14 tables, 3 figures and bootstrap distributions to /kaggle/working/outputs
+388.7s 202 public aggregate export (no clinical text): /kaggle/working/public_results/
+388.7s 203 
+388.7s 204 ==============================================================================
+388.7s 205 STAGE 6  integrity check
+388.7s 206 ==============================================================================
+388.9s 207 clinical and SummEval integrity validation passed
+388.9s 208 
+388.9s 209 sample and master file
+388.9s 210 ok    302 rows selected
+388.9s 211 ok    2 demonstrations
+388.9s 212 ok    300 evaluation cases
+388.9s 213 ok    source rows unique
+388.9s 214 ok    no demonstration leakage into the evaluation set
+388.9s 215 ok    900 master rows
+388.9s 216 ok    300 cases
+388.9s 217 ok    equal rows per condition
+388.9s 218 ok    three conditions per case
+388.9s 219 ok    one reference per case
+388.9s 220 ok    unique case-condition keys
+388.9s 221 ok    no missing metric values
+388.9s 222 ok    all metric values finite
+388.9s 223 ok    ROUGE in [0,1]
+388.9s 224 ok    BLEU in [0,100]
+388.9s 225 ok    judge14_mean in [1,5]
+388.9s 226 ok    judge14_mean equals mean of its three dimensions
+388.9s 227 ok    judge14 parsed for at least 99% of rows (894/900)
+388.9s 228 ok    judge7_mean in [1,5]
+388.9s 229 ok    judge7_mean equals mean of its three dimensions
+388.9s 230 ok    judge7 parsed for at least 95% of rows (900/900)
+388.9s 231 
+388.9s 232 independent recomputation of the headline figures
+388.9s 233 ok    pooled rouge1: +0.3547
+388.9s 234 ok    adjusted rouge1: +0.1504 (hand-computed = library)
+388.9s 235 ok    pooled rouge2: +0.3981
+388.9s 236 ok    adjusted rouge2: +0.2528 (hand-computed = library)
+388.9s 237 ok    pooled rougeL: +0.3801
+388.9s 238 ok    adjusted rougeL: +0.2037 (hand-computed = library)
+388.9s 239 ok    pooled bleu: +0.4099
+388.9s 240 ok    adjusted bleu: +0.1996 (hand-computed = library)
+388.9s 241 ok    pooled bertscore_f1: +0.3710
+388.9s 242 ok    adjusted bertscore_f1: +0.3425 (hand-computed = library)
+388.9s 243 
+388.9s 244 SummEval judge vs human, dataset level : +0.4434
+389.3s 245 SummEval judge, summary level (G-Eval)  : +0.3894
+389.3s 246 recorded provenance for stage 6
+389.3s 247 
+389.3s 248 per-stage provenance recorded for: stage_2, stage_3, stage_4, stage_5, stage_6
+389.3s 249 ok    provenance contains stages 2, 3, 4, 5 and 6
+389.3s 250 ok    one generation fingerprint across stages 2-6 ({'9ccbd3d4d051'})
+389.3s 251 ok    clinical and SummEval judging used the same rubric and judge settings
+389.3s 252 ok    SummEval resolved revision matches the pinned configuration
+391.4s 253 
+391.4s 254 class       file                                              rows  sha256                                                            purpose
+391.4s 255 RESTRICTED  selected_cases.csv                                 302  5bc32463f88de59c945082640d3d678e13ceb242da6b26dbe72372183916320a  seeded sample and demonstration split
+391.4s 256 RESTRICTED  generated_summaries.csv                            900  f5e5241b022b1d261153ca1ca36bf581bfd6b59c1c3f80b64f403c50ffab2fa9  generated summaries, long format
+391.4s 257 RESTRICTED  metrics_long.csv                                   900  9c3351a1b60601eda19e697c392bcbce921fd97b0f3cf4674ece3a2ef5b0e189  summaries plus automatic metrics
+391.4s 258 RESTRICTED  clinical_results_final.csv                         900  dd628876fac82109a97ef5be5ded4d6731df0bfb0eed77ace74de6a5a5a027e8  authoritative 900-row master
+391.4s 259 RESTRICTED  judge_raw_clinical.jsonl                          1800  b917d1eb2fa82965cf0dc016eb16b83fbc55ea24e850bcde8b192b52f490aad2  raw clinical judge outputs, unparsed
+391.4s 260 RESTRICTED  gen_checkpoint.jsonl                               300  b0bf4dd036b4877df4b346f8971cec143b55be4749fa083ae3987c3e93e9f8ee  generation checkpoint, contains summary text
+391.4s 261 RESTRICTED  judge_audit_sheet.csv                               90  5b1dd27da5cc530af907ee6f872bb96c10696f01316d669af17c71f060835edd  manual audit sample, contains summary text
+391.4s 262 SHAREABLE   summeval_final.csv                                 800  a4e5bf35b8a655a4bbd00f28309a96c2f0b3ffe12e183dfec8357ca538e89a51  SummEval validation (public dataset)
+391.4s 263 SHAREABLE   judge_raw_summeval.jsonl                          1600  6eabd99cb7abc810d685b7210c9c3a849ce345cf68af1f366f71d898e8c72465  raw SummEval judge outputs (public dataset)
+391.4s 264 SHAREABLE   experiment_config.json                              43  e7edfbe6f02063ae6adc0de1bc342df1c1b3c8025e050f3c66569ba23a5f5916  frozen experiment configuration
+391.4s 265 SHAREABLE   environment-final.json                              20  dfa15846c6a96bc1bd3666be89deff49cd1376efc63aad8eff01e58a5b10e348  software environment
+391.4s 266 SHAREABLE   truncation_report.csv                              300  a4b69722b978082f933ebb6f5c6313492ecf0662c6f13081552676c12bdb18f3  input truncation report (counts only)
+391.4s 267 SHAREABLE   provenance.json                                    153  6e0b4e3a1b28834a00c2e709a61083803d0f5778015716bf1c6f8ae3e8f5d984  per-stage environment and fingerprints
+391.4s 268 SHAREABLE   model_revisions.json                                20  47b2267f3f45852d56ac3747e2bfb5dd53a1ccbe216b5a89529e3b4c30b2739f  judge model commit SHAs
+391.4s 269 SHAREABLE   requirements-final.txt                             932  ecdc6ea75835d585a669d3fd8397479fd7d53844d3c8c86a2c6c5e1d57883657  Stage 6 package snapshot from pip freeze
+391.4s 270 SHAREABLE   outputs/bootstrap_distributions.csv               2000  13b9bfc604961f0f226fc5c82a330d2bc3e0ad0933aedacb2904bfb5829063e8  generated output
+391.4s 271 SHAREABLE   outputs/figure_bertscore_scatter.png                -1  c6ab175661351c92b6deda72775e4ef1336dd7379cf168b2ef324396de3ee6a5  generated output
+391.4s 272 SHAREABLE   outputs/figure_pooled_vs_adjusted.png               -1  82727d196f8ed944e1a4580b35766e507c11985d418a79ba239cc671b4743e5a  generated output
+391.4s 273 SHAREABLE   outputs/figure_within_condition.png                 -1  bc6cd70d825f84305fdd2b206aedb4decdf56cdf6df2b835374bf829b82c1cd3  generated output
+391.4s 274 SHAREABLE   outputs/table10_judge_sensitivity.csv                5  28fcbe2a3bf18588ee5a01aaa52e2ec67156e1cce97ecc4f54a617e9f18765d8  generated output
+391.4s 275 SHAREABLE   outputs/table11_fewshot_vs_zeroshot.csv              1  a5d3bd3028a7bd53d1734f24424af875199f52977c71b6491fc85d0d073d622e  generated output
+391.4s 276 SHAREABLE   outputs/table12_summeval_dataset_level.csv           7  5fa2ecb53bc3d095eca380868d1a7c15c1a0ae92c3db549aed02f1016e3977c8  generated output
+391.4s 277 SHAREABLE   outputs/table13_summeval_summary_level.csv           7  3b07516889af463b7585bdc6545d152e463b238ff6b957f913aa84cb8ffffc87  generated output
+391.4s 278 SHAREABLE   outputs/table14_judge_vs_metrics_on_humans.csv       5  7d6ba52637492e688cc0fab81ad63b82eca1a28eb65e342de8d8f1485ad8c605  generated output
+391.4s 279 SHAREABLE   outputs/table1_descriptives.csv                      3  be67e0055b648822f5414c5e623bd07ad4210b301fc4ee2331e627d0ec2b5d2a  generated output
+391.4s 280 SHAREABLE   outputs/table2_system_separation.csv                 6  7ab701eda29e6f63b7d6f8e23f5b8369b044f7bb639c4490a250e1ede83163ab  generated output
+391.4s 281 SHAREABLE   outputs/table3_pooled_vs_adjusted.csv                5  99b6ee2d60d1497a3daaa08f3c69e751fd6a22379d30ea601312a856b86e3d8b  generated output
+391.4s 282 SHAREABLE   outputs/table4_within_condition.csv                 15  6ddec89f91901cefd35d7678556101e2918775f31ee023236d06201e4c2ec9db  generated output
+391.4s 283 SHAREABLE   outputs/table5_metric_contrasts.csv                 10  551c35e8863062108fcf8f751c8a59da1aa4eff87d1c486aed3edad7cc196dbf  generated output
+391.4s 284 SHAREABLE   outputs/table6_weak_vs_good.csv                     10  045dd040c7f26ca93d4d6ba2d55d58e6649bc17149e1f6776bdc6395641ad691  generated output
+391.4s 285 SHAREABLE   outputs/table7_divergence.csv                       15  fc9df1324739187feed7af57ca5c7b2e1143ec9245be9ed12c1eac93ab984593  generated output
+391.4s 286 SHAREABLE   outputs/table8_judge_behaviour.csv                   3  4879bd3cb40c79cac9f8a1f390044ae91206b10038b46191957548971993b973  generated output
+391.4s 287 SHAREABLE   outputs/table9_judge_dimensions.csv                 20  c4721a723dabf24e1754e1c4bbf585f566f0afbf9a21d23430dcb67e54259aea  generated output
+391.4s 288 SHAREABLE   public_results/index.json                          249  351e2b32cb58f7a502aa9dd3324dbe72a060bf6420deb1a1c0e3542bed3070e4  generated output
+391.4s 289 SHAREABLE   public_results/table10_judge_sensitivity.csv         5  28fcbe2a3bf18588ee5a01aaa52e2ec67156e1cce97ecc4f54a617e9f18765d8  generated output
+391.4s 290 SHAREABLE   public_results/table11_fewshot_vs_zeroshot.csv       1  a5d3bd3028a7bd53d1734f24424af875199f52977c71b6491fc85d0d073d622e  generated output
+391.4s 291 SHAREABLE   public_results/table12_summeval_dataset_level.csv       7  5fa2ecb53bc3d095eca380868d1a7c15c1a0ae92c3db549aed02f1016e3977c8  generated output
+391.4s 292 SHAREABLE   public_results/table13_summeval_summary_level.csv       7  3b07516889af463b7585bdc6545d152e463b238ff6b957f913aa84cb8ffffc87  generated output
+391.4s 293 SHAREABLE   public_results/table14_judge_vs_metrics_on_humans.csv       5  7d6ba52637492e688cc0fab81ad63b82eca1a28eb65e342de8d8f1485ad8c605  generated output
+391.4s 294 SHAREABLE   public_results/table1_descriptives.csv               3  be67e0055b648822f5414c5e623bd07ad4210b301fc4ee2331e627d0ec2b5d2a  generated output
+391.4s 295 SHAREABLE   public_results/table2_system_separation.csv          6  7ab701eda29e6f63b7d6f8e23f5b8369b044f7bb639c4490a250e1ede83163ab  generated output
+391.4s 296 SHAREABLE   public_results/table3_pooled_vs_adjusted.csv         5  99b6ee2d60d1497a3daaa08f3c69e751fd6a22379d30ea601312a856b86e3d8b  generated output
+391.4s 297 SHAREABLE   public_results/table4_within_condition.csv          15  6ddec89f91901cefd35d7678556101e2918775f31ee023236d06201e4c2ec9db  generated output
+391.4s 298 SHAREABLE   public_results/table5_metric_contrasts.csv          10  551c35e8863062108fcf8f751c8a59da1aa4eff87d1c486aed3edad7cc196dbf  generated output
+391.4s 299 SHAREABLE   public_results/table6_weak_vs_good.csv              10  045dd040c7f26ca93d4d6ba2d55d58e6649bc17149e1f6776bdc6395641ad691  generated output
+391.4s 300 SHAREABLE   public_results/table7_divergence.csv                15  fc9df1324739187feed7af57ca5c7b2e1143ec9245be9ed12c1eac93ab984593  generated output
+391.4s 301 SHAREABLE   public_results/table8_judge_behaviour.csv            3  4879bd3cb40c79cac9f8a1f390044ae91206b10038b46191957548971993b973  generated output
+391.4s 302 SHAREABLE   public_results/table9_judge_dimensions.csv          20  c4721a723dabf24e1754e1c4bbf585f566f0afbf9a21d23430dcb67e54259aea  generated output
+391.4s 303 
+391.4s 304 generated 2026-07-29 22:52:16
+391.4s 305 run_label=final  gen_fingerprint=9ccbd3d4d051
+391.4s 306 Keep the executed Session C notebook with this manifest; the running kernel cannot reliably identify its own notebook source file.
+391.4s 307 RESTRICTED files contain MIMIC-IV derived text. They must stay inside your credentialed environment and must not be attached to the thesis, pushed to a repository, or shared with anyone lacking PhysioNet access.
+391.4s 308 
+391.4s 309 ==============================================================================
+391.4s 310 ALL INTEGRITY CHECKS PASSED
+391.4s 311 ==============================================================================
+397.4s 312 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+397.4s 313 cells[i][c] = re.sub('\\\\\|', '|', cell)
+397.6s 314 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+397.6s 315 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+398.2s 316 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+398.5s 317 [NbConvertApp] Writing 143781 bytes to __notebook__.ipynb
+401.0s 318 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+402.2s 319 [NbConvertApp] Writing 773799 bytes to __results__.html
